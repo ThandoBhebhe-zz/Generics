@@ -51,9 +51,10 @@ public class Team<T extends Player> implements Comparable<Team<T>>{
 
         if(opponent != null){
             opponent.matchResult(null, theirScore, ourScore);
+            System.out.println("You "+message+" "+opponent.getName());
         }
 
-        System.out.println("You "+message+" "+opponent.getName());
+
 
     }
 
